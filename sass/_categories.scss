@@ -4,6 +4,11 @@
         margin-top: 50px;
     }
     .categories__cards__wrapper{
+        flex: 1/2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
         .categories__card{
             width: 147px;
             height: 209px;
