@@ -1,0 +1,244 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0px;
+  background-color: #2B2B2B;
+}
+.header__shrink {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px #A259FF;
+}
+.header__btn-hamburger {
+  width: 20px;
+  background: transparent;
+  border: none;
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+.header__item {
+  display: flex;
+  gap: 20px;
+  transition: 0.2s;
+}
+.header .header__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 60px;
+  padding: 0px, 30px, 0px, 30px;
+  border-radius: 20px;
+  border: none;
+  gap: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: #A259FF;
+  transition: 0.4s;
+}
+.header .header__btn:hover {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #A259FF;
+}
+.header__item:hover {
+  color: #A259FF;
+}
+.header__right .header__list {
+  display: flex;
+  gap: 24px;
+}
+.header__list {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  box-shadow: 0 0 10px black;
+  transition: 0.6s;
+}
+.header__list-show {
+  left: 0;
+}
+
+@media (min-width: 600px) {
+  .header__list {
+    position: static;
+    display: flex;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+  }
+  .header .header__btn-hamburger {
+    display: none;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-family: "Work Sans", sans-serif;
+  background-color: #2B2B2B;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.df {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.hero {
+  margin-top: 100px;
+  margin: 0 auto;
+}
+.hero .hero__title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hero .hero__title h1 {
+  width: 100%;
+}
+.hero .hero__title p {
+  width: 100%;
+  line-height: 22px;
+}
+.hero .hero__card {
+  margin-top: 20px;
+  width: 315px;
+  height: 315px;
+  border-radius: 20px 20px 0 0;
+  background-color: #3B3B3B;
+}
+.hero .hero__card .hero__card__info {
+  padding: 10px 20px;
+  color: white;
+}
+.hero .hero__card .hero__card__ava {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero .hero__btn {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero__btn .hero__button {
+  width: 100%;
+  height: 60px;
+  background-color: #A259FF;
+  border-radius: 20px;
+  border: none;
+  padding: 0px, 50px, 0px, 50px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: 0.4s;
+}
+.hero .hero__btn .hero__button:hover {
+  background-color: transparent;
+  border: 1px solid #A259FF;
+}
+
+@media (min-width: 768px) {
+  .hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.statistic {
+  margin-top: 50px;
+}
+.statistic .statistic__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statistic .statistic__wrapper .statistic__news {
+  color: white;
+}
+
+.trending {
+  margin-top: 50px;
+}
+.trending .trending__title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.trending .trending__title h2 {
+  line-height: 29px;
+}
+.trending .trending__img {
+  margin-top: 20px;
+  display: flex;
+}
+.trending .trending__bottom {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.trending .trending__bottom h3 {
+  color: white;
+}
+.trending .trending__bottom .trending__under__bottom {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.creators {
+  margin-top: 40px;
+}
+.creators .creators__title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  word-spacing: 1px;
+}
