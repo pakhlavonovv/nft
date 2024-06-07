@@ -288,6 +288,9 @@ button {
 .trending {
   margin-top: 50px;
 }
+.trending .trending__cards {
+  display: flex;
+}
 .trending .trending__title {
   color: white;
   display: flex;
@@ -317,6 +320,11 @@ button {
   gap: 10px;
 }
 
+@media (min-width: 600px) {
+  .trending .trending__cards {
+    display: flex;
+  }
+}
 .creators {
   margin-top: 40px;
 }
@@ -326,4 +334,82 @@ button {
   flex-direction: column;
   gap: 10px;
   word-spacing: 1px;
+}
+.creators .creator__card {
+  margin-top: 30px;
+  width: 100%;
+  height: 100px;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.creators .creator__card__left img {
+  width: 60px;
+  height: 60px;
+}
+.creators .creators__btn button {
+  margin-top: 50px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #A259FF;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: transparent;
+  transition: 0.4s;
+}
+.creators .creators__btn button:hover {
+  background-color: #A259FF;
+}
+
+@media (min-width: 600px) {
+  .creators .creator__card {
+    width: 240px;
+    height: 238px;
+    flex-direction: column;
+  }
+  .creators .creator__card .creator__card__right {
+    text-align: center;
+  }
+  .creators .creators__cards__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .creators .creators__btn {
+    margin-top: 30px;
+  }
+  .creators .creators__btn button {
+    width: 247px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .creators .creator__card__left img {
+    width: 110px;
+    height: 120px;
+  }
+}
+.categories .categories__title {
+  color: white;
+  margin-top: 50px;
+}
+.categories .categories__cards__wrapper .categories__card {
+  width: 147px;
+  height: 209px;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+}
+.categories .categories__cards__wrapper .categories__card h4 {
+  color: white;
+  padding: 15px 20px;
 }

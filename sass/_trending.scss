@@ -1,5 +1,8 @@
 .trending{
     margin-top: 50px;
+    .trending__cards{
+        display: flex;
+    }
     .trending__title{
         color: white;
         display: flex;
@@ -26,6 +29,14 @@
             align-items: center;
             color: white;
             gap: 10px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .trending{
+        .trending__cards{
+            display: flex;
         }
     }
 }
